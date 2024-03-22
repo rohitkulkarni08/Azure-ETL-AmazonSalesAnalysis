@@ -1,0 +1,75 @@
+{
+    "name": "PL_TRIGGER_ALL_PIPELINES",
+    "properties": {
+        "activities": [
+            {
+                "name": "PL_TRIGGER_BLOB_ADLS_CPY",
+                "type": "ExecutePipeline",
+                "dependsOn": [],
+                "policy": {
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "pipeline": {
+                        "referenceName": "PL_BLOB_ADLS_TRIGGER",
+                        "type": "PipelineReference"
+                    },
+                    "waitOnCompletion": true
+                }
+            },
+            {
+                "name": "PL_DB_EXECUTION_TRIGGER",
+                "type": "ExecutePipeline",
+                "dependsOn": [
+                    {
+                        "activity": "PL_TRIGGER_BLOB_ADLS_CPY",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "pipeline": {
+                        "referenceName": "PL_DATABRICKS_TRIGGER",
+                        "type": "PipelineReference"
+                    },
+                    "waitOnCompletion": true
+                }
+            },
+            {
+                "name": "PL_SQL_LOAD_TRIGGER",
+                "type": "ExecutePipeline",
+                "dependsOn": [
+                    {
+                        "activity": "PL_DB_EXECUTION_TRIGGER",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "pipeline": {
+                        "referenceName": "PL_SQL_DB_TRIGGER",
+                        "type": "PipelineReference"
+                    },
+                    "waitOnCompletion": true
+                }
+            }
+        ],
+        "folder": {
+            "name": "AMAZON_SALES_ANALYSIS"
+        },
+        "annotations": [],
+        "lastPublishTime": "2024-03-22T11:21:26Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}
