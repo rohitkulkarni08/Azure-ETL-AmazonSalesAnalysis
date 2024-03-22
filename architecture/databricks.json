@@ -1,0 +1,74 @@
+{
+    "properties": {
+        "managedResourceGroupId": "/subscriptions/4fb3fea7-f682-4b9a-ac89-4a933b6121f6/resourceGroups/databricks-rg-rohitk0810databricks-yfth4ltbu4ea2",
+        "parameters": {
+            "enableFedRampCertification": {
+                "type": "Bool",
+                "value": false
+            },
+            "enableNoPublicIp": {
+                "type": "Bool",
+                "value": false
+            },
+            "prepareEncryption": {
+                "type": "Bool",
+                "value": false
+            },
+            "publicIpName": {
+                "type": "String",
+                "value": "nat-gw-public-ip"
+            },
+            "requireInfrastructureEncryption": {
+                "type": "Bool",
+                "value": false
+            },
+            "resourceTags": {
+                "type": "Object",
+                "value": {
+                    "application": "databricks",
+                    "databricks-environment": "true"
+                }
+            },
+            "storageAccountName": {
+                "type": "String",
+                "value": "dbstoragen4lx6pzcyeabe"
+            },
+            "storageAccountSkuName": {
+                "type": "String",
+                "value": "Standard_GRS"
+            },
+            "vnetAddressPrefix": {
+                "type": "String",
+                "value": "10.139"
+            }
+        },
+        "provisioningState": "Succeeded",
+        "authorizations": [
+            {
+                "principalId": "9a74af6f-d153-4348-988a-e2672920bee9",
+                "roleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635"
+            }
+        ],
+        "createdBy": {
+            "oid": "23a4383d-b994-4a97-8268-abbe6207c43d",
+            "puid": "000340016D947E12",
+            "applicationId": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c"
+        },
+        "updatedBy": {
+            "oid": "23a4383d-b994-4a97-8268-abbe6207c43d",
+            "puid": "000340016D947E12",
+            "applicationId": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c"
+        },
+        "workspaceId": "1622675151050827",
+        "workspaceUrl": "adb-1622675151050827.7.azuredatabricks.net",
+        "createdDateTime": "2024-03-18T22:26:31.3208775Z"
+    },
+    "id": "/subscriptions/4fb3fea7-f682-4b9a-ac89-4a933b6121f6/resourceGroups/DataEngineeringProjects/providers/Microsoft.Databricks/workspaces/rohitk0810databricks",
+    "name": "rohitk0810databricks",
+    "type": "Microsoft.Databricks/workspaces",
+    "sku": {
+        "name": "standard"
+    },
+    "location": "eastus",
+    "tags": {}
+}
