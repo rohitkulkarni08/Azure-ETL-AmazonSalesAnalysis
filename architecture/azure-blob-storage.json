@@ -1,0 +1,71 @@
+{
+    "sku": {
+        "name": "Standard_RAGRS",
+        "tier": "Standard"
+    },
+    "kind": "StorageV2",
+    "id": "/subscriptions/4fb3fea7-f682-4b9a-ac89-4a933b6121f6/resourceGroups/DataEngineeringProjects/providers/Microsoft.Storage/storageAccounts/rohitk0810deprojects",
+    "name": "rohitk0810deprojects",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "dnsEndpointType": "Standard",
+        "defaultToOAuthAuthentication": false,
+        "publicNetworkAccess": "Enabled",
+        "keyCreationTime": {
+            "key1": "2024-03-18T21:59:46.1826709Z",
+            "key2": "2024-03-18T21:59:46.1826709Z"
+        },
+        "allowCrossTenantReplication": false,
+        "privateEndpointConnections": [],
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": false,
+        "allowSharedKeyAccess": true,
+        "networkAcls": {
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "requireInfrastructureEncryption": false,
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-03-18T21:59:46.6357980Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-03-18T21:59:46.6357980Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Hot",
+        "provisioningState": "Succeeded",
+        "creationTime": "2024-03-18T21:59:45.9795466Z",
+        "primaryEndpoints": {
+            "dfs": "https://rohitk0810deprojects.dfs.core.windows.net/",
+            "web": "https://rohitk0810deprojects.z13.web.core.windows.net/",
+            "blob": "https://rohitk0810deprojects.blob.core.windows.net/",
+            "queue": "https://rohitk0810deprojects.queue.core.windows.net/",
+            "table": "https://rohitk0810deprojects.table.core.windows.net/",
+            "file": "https://rohitk0810deprojects.file.core.windows.net/"
+        },
+        "primaryLocation": "eastus",
+        "statusOfPrimary": "available",
+        "secondaryLocation": "westus",
+        "statusOfSecondary": "available",
+        "secondaryEndpoints": {
+            "dfs": "https://rohitk0810deprojects-secondary.dfs.core.windows.net/",
+            "web": "https://rohitk0810deprojects-secondary.z13.web.core.windows.net/",
+            "blob": "https://rohitk0810deprojects-secondary.blob.core.windows.net/",
+            "queue": "https://rohitk0810deprojects-secondary.queue.core.windows.net/",
+            "table": "https://rohitk0810deprojects-secondary.table.core.windows.net/"
+        }
+    }
+}
