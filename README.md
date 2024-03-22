@@ -1,4 +1,4 @@
-# E-Commerce Sales Analysis and Optimization using Azure ETL Pipeline
+# E-Commerce Sales Analysis and Optimization using Azure ETL
 
 ## Overview
 
