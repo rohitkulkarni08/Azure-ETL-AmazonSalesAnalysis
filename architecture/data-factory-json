@@ -1,0 +1,25 @@
+{
+    "name": "MovieAnalyticsDataFactory",
+    "id": "/subscriptions/4fb3fea7-f682-4b9a-ac89-4a933b6121f6/resourceGroups/dataengineeringprojects/providers/Microsoft.DataFactory/factories/movieanalyticsdatafactory",
+    "type": "Microsoft.DataFactory/factories",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "createTime": "2024-03-20T19:06:05.566131Z",
+        "version": "2018-06-01",
+        "factoryStatistics": {
+            "totalResourceCount": 0,
+            "maxAllowedResourceCount": 0,
+            "factorySizeInGbUnits": 0,
+            "maxAllowedFactorySizeInGbUnits": 0
+        },
+        "publicNetworkAccess": "Enabled"
+    },
+    "eTag": "\"11003a65-0000-0100-0000-65fb339d0000\"",
+    "location": "eastus",
+    "identity": {
+        "type": "SystemAssigned",
+        "principalId": "1a1f283a-5b05-4736-8f6a-d56c1d9a18e9",
+        "tenantId": "a6ca53fb-8052-4abd-afd1-944bad575633"
+    },
+    "tags": {}
+}
