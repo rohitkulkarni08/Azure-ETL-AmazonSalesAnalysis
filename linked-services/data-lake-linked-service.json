@@ -1,0 +1,16 @@
+{
+    "name": "AzureDataLakeStorage1",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "AzureBlobFS",
+        "typeProperties": {
+            "url": "https://moviedatanalytics.dfs.core.windows.net/",
+            "encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEEzMEI2RURGLTE4RTMtNEY2MC05ODE0LTBFNjFDNTlDMDMyNV8wYjhmNWYwMy1jMmZiLTQ2ZWMtYjJlYi04YzdmOWJhZGIxYjUiDQp9"
+        },
+        "connectVia": {
+            "referenceName": "integrationRuntime1",
+            "type": "IntegrationRuntimeReference"
+        }
+    }
+}
