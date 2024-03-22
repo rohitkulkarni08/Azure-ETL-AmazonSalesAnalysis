@@ -1,0 +1,9 @@
+{
+    "id": "/subscriptions/4fb3fea7-f682-4b9a-ac89-4a933b6121f6/resourceGroups/DataEngineeringProjects",
+    "name": "DataEngineeringProjects",
+    "type": "Microsoft.Resources/resourceGroups",
+    "location": "eastus",
+    "properties": {
+        "provisioningState": "Succeeded"
+    }
+}
