@@ -1,0 +1,18 @@
+{
+    "kind": "v12.0",
+    "properties": {
+        "administratorLogin": "rohitkulkarni",
+        "version": "12.0",
+        "state": "Ready",
+        "fullyQualifiedDomainName": "rohitkulkarni.database.windows.net",
+        "privateEndpointConnections": [],
+        "minimalTlsVersion": "1.2",
+        "publicNetworkAccess": "Enabled",
+        "restrictOutboundNetworkAccess": "Disabled"
+    },
+    "location": "eastus",
+    "tags": {},
+    "id": "/subscriptions/4fb3fea7-f682-4b9a-ac89-4a933b6121f6/resourceGroups/DataEngineeringProjects/providers/Microsoft.Sql/servers/rohitkulkarni",
+    "name": "rohitkulkarni",
+    "type": "Microsoft.Sql/servers"
+}
