@@ -1,0 +1,81 @@
+{
+    "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+    },
+    "kind": "StorageV2",
+    "id": "/subscriptions/4fb3fea7-f682-4b9a-ac89-4a933b6121f6/resourceGroups/DataEngineeringProjects/providers/Microsoft.Storage/storageAccounts/moviedatanalytics",
+    "name": "moviedatanalytics",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "dnsEndpointType": "Standard",
+        "defaultToOAuthAuthentication": false,
+        "publicNetworkAccess": "Enabled",
+        "keyCreationTime": {
+            "key1": "2024-03-20T16:54:56.7270753Z",
+            "key2": "2024-03-20T16:54:56.7270753Z"
+        },
+        "allowCrossTenantReplication": false,
+        "privateEndpointConnections": [
+            {
+                "id": "/subscriptions/4fb3fea7-f682-4b9a-ac89-4a933b6121f6/resourceGroups/DataEngineeringProjects/providers/Microsoft.Storage/storageAccounts/moviedatanalytics/privateEndpointConnections/moviedatanalytics.84fd30df-ce5d-4759-9a89-c983ba276c93",
+                "name": "moviedatanalytics.84fd30df-ce5d-4759-9a89-c983ba276c93",
+                "type": "Microsoft.Storage/storageAccounts/privateEndpointConnections",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateEndpoint": {
+                        "id": "/subscriptions/ea827efb-677e-4b87-9559-44da9da17550/resourceGroups/vnet-ea827efb-eastus-50-rg/providers/Microsoft.Network/privateEndpoints/movieanalyticsdatafactory.AzureDataLakeStorage193"
+                    },
+                    "privateLinkServiceConnectionState": {
+                        "status": "Pending",
+                        "description": "Requested by DataFactory:MovieAnalyticsDataFactory, Name:AzureDataLakeStorage193",
+                        "actionRequired": "None"
+                    }
+                }
+            }
+        ],
+        "isSftpEnabled": false,
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": false,
+        "allowSharedKeyAccess": true,
+        "isHnsEnabled": true,
+        "networkAcls": {
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "requireInfrastructureEncryption": false,
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-03-20T16:54:56.7426339Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-03-20T16:54:56.7426339Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Hot",
+        "provisioningState": "Succeeded",
+        "creationTime": "2024-03-20T16:54:56.4770065Z",
+        "primaryEndpoints": {
+            "dfs": "https://moviedatanalytics.dfs.core.windows.net/",
+            "web": "https://moviedatanalytics.z13.web.core.windows.net/",
+            "blob": "https://moviedatanalytics.blob.core.windows.net/",
+            "queue": "https://moviedatanalytics.queue.core.windows.net/",
+            "table": "https://moviedatanalytics.table.core.windows.net/",
+            "file": "https://moviedatanalytics.file.core.windows.net/"
+        },
+        "primaryLocation": "eastus",
+        "statusOfPrimary": "available"
+    }
+}
