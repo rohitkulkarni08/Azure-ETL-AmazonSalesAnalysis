@@ -1,0 +1,60 @@
+{
+    "name": "PL_DATABRICKS_TRIGGER",
+    "properties": {
+        "activities": [
+            {
+                "name": "PL_DB_L0_TRIGGER",
+                "type": "DatabricksNotebook",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "notebookPath": "/Users/rohitkulkarni0810@outlook.com/AMAZON_SALES_ANALYSIS/AMZAON_SALES_ANALYSIS_L0"
+                },
+                "linkedServiceName": {
+                    "referenceName": "LS_ADB",
+                    "type": "LinkedServiceReference"
+                }
+            },
+            {
+                "name": "PL_DB_L1_TRIGGER",
+                "type": "DatabricksNotebook",
+                "dependsOn": [
+                    {
+                        "activity": "PL_DB_L0_TRIGGER",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "notebookPath": "/Users/rohitkulkarni0810@outlook.com/AMAZON_SALES_ANALYSIS/AMAZON_SALES_ANALYSIS_L1"
+                },
+                "linkedServiceName": {
+                    "referenceName": "LS_ADB",
+                    "type": "LinkedServiceReference"
+                }
+            }
+        ],
+        "folder": {
+            "name": "AMAZON_SALES_ANALYSIS"
+        },
+        "annotations": [],
+        "lastPublishTime": "2024-03-22T10:40:07Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}
